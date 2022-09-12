@@ -1,0 +1,254 @@
+.round_button,
+.save_button {
+  background-color: var(--brand-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+  max-width: 2rem;
+  max-height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+
+.round_button:active,
+.save_button:active {
+  outline: 4px solid hsl(207, 37%, 80%);
+}
+
+.save_button {
+  margin-right: 0.5rem;
+}
+
+.save_label {
+  font-size: 1rem;
+  color: var(--grey-text-color);
+}
+
+.search_button {
+  background-color: var(--light-green-color);
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  border: none;
+  flex: 1;
+  border-radius: 4px;
+  max-width: 2.85rem;
+  max-height: 2.75rem;
+  min-width: 2.85rem;
+  min-height: 2.75rem;
+}
+
+.search_button:hover {
+  background-color: var(--light-green-middle-color);
+}
+
+.button_stroke {
+  display: block;
+  cursor: pointer;
+  background-color: #ffffff;
+  width: 100%;
+  grid-column: span 1;
+  padding: 1rem;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 4px;
+}
+
+.stroke_row_flex_end {
+  justify-content: flex-end;
+}
+
+.start_button {
+  display: block;
+  background: var(--brand-color);
+  background: radial-gradient(
+    circle,
+    var(--brand-color-pale) 0%,
+    var(--brand-color-light) 62%,
+    var(--brand-color) 100%
+  );
+  cursor: pointer;
+  border: none;
+  outline: 5px solid var(--light-green-color);
+  border-radius: 3rem;
+  max-width: 6rem;
+  max-height: 6rem;
+  min-width: 6rem;
+  min-height: 6rem;
+  margin: 3rem auto;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.start_button:active {
+  background-color: hsl(0, 68%, 70%);
+  outline: 4px solid hsl(0, 68%, 87%);
+}
+
+.duration_button {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  grid-column: span 1;
+  background-color: var(--light-green-color);
+  border: none;
+}
+
+.duration_button_active {
+  background-color: var(--brand-color);
+  color: #ffffff;
+}
+
+.duration_button:active {
+  color: #000000;
+  background-color: hsl(0, 0%, 98%);
+  outline: 2px solid hsl(0, 0%, 98%);
+}
+
+.github_button {
+  border: none;
+  outline: none;
+  min-width: 2rem;
+  min-height: 2rem;
+  max-height: 2rem;
+  max-height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.cancel_button {
+  background-color: var(--brand-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+@media (min-width: 43rem) {
+  .round_button:hover,
+  .save_button:hover {
+    filter: brightness(1.6);
+  }
+
+  .round_button:active,
+  .save_button:active {
+    outline: 4px solid hsl(207, 37%, 100%);
+  }
+
+  .save_label {
+    font-size: 1.25rem;
+  }
+
+  .round_button,
+  .save_button {
+    border-radius: 1.3rem;
+    max-width: 2.6rem;
+    max-height: 2.6rem;
+    min-width: 2.6rem;
+    min-height: 2.6rem;
+  }
+
+  .search_button {
+    max-width: 4rem;
+    max-height: 4rem;
+    min-width: 4rem;
+    min-height: 4rem;
+  }
+
+  .search_button svg {
+    transform: matrix(2, 0, 0, 2, 0, 0);
+  }
+
+  .search_button:hover {
+    outline: 0;
+  }
+
+  .search_button:active {
+    outline: 0;
+  }
+
+  .round_button svg,
+  .save_button svg {
+    transform: scale(1.5);
+  }
+
+  .button_stroke:hover {
+    background-color: #f5f5f5;
+  }
+
+  .button_stroke {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .start_button {
+    min-width: 8rem;
+    min-height: 8rem;
+    max-height: 8rem;
+    max-height: 8rem;
+    border-radius: 4rem;
+    font-size: 1.75rem;
+    margin: 4rem auto;
+    outline: 7px solid var(--light-green-color);
+    background: radial-gradient(
+      circle,
+      var(--brand-color-pale) 0%,
+      var(--brand-color-light) 62%,
+      var(--brand-color) 100%
+    );
+  }
+
+  .start_button:hover {
+    background: radial-gradient(
+      circle,
+      var(--brand-color-pale) 0%,
+      var(--brand-color-light) 89%,
+      var(--brand-color) 100%
+    );
+  }
+
+  .duration_button {
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    grid-column: span 1;
+    background-color: var(--light-green-color);
+    border: none;
+  }
+
+  .duration_button_active {
+    background-color: var(--brand-color);
+    color: #ffffff;
+  }
+
+  .github_button {
+    min-width: 3rem;
+    min-height: 3rem;
+    max-height: 3rem;
+    max-height: 3rem;
+    border-radius: 1.5rem;
+  }
+
+  .github_button svg {
+    transform: matrix(2.5, 0, 0, 2.5, 0, 0);
+  }
+
+  .github_button svg:hover {
+    filter: brightness(1.6);
+  }
+
+  .cancel_button {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .cancel_button:hover {
+    background-color: var(--brand-color-light);
+  }
+}

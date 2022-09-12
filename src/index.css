@@ -1,0 +1,101 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap");
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/* prettier-ignore */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+/* prettier-ignore */
+ol, ul {
+	list-style: none;
+}
+/* prettier-ignore */
+blockquote, q {
+	quotes: none;
+}
+/* prettier-ignore */
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px !important;
+  box-sizing: border-box !important;
+  overflow-y: scroll;
+  color: hsl(0, 0%, 19%);
+  --brand-color: hsl(203, 92%, 20%);
+  --brand-color-light: hsl(203, 92%, 30%);
+  --brand-color-pale: hsl(203, 92%, 40%);
+
+  --primary-color: hsl(207, 37%, 21%);
+  --primary-color-middle: hsl(207, 37%, 41%);
+  --primary-color-light: hsl(207, 37%, 61%);
+
+  --secondary-color: hsl(208, 63%, 38%);
+  --count-indicator-color: hsl(150, 100%, 40%);
+  --active-nav-link: hsl(184, 57%, 70%);
+  --light-green-color: hsl(182, 47%, 74%);
+  --light-green-middle-color: hsl(182, 47%, 78%);
+
+  --card-background-color: hsl(0, 0%, 98%);
+  --card-border-color: hsl(0, 0%, 93%);
+
+  --grey-text-color: hsl(0, 0%, 62%);
+  --light-grey-color: hsl(0, 0%, 95%);
+  --dark-grey-color: hsl(0, 0%, 43%);
+}
+
+html {
+  box-sizing: border-box !important;
+}
+/* prettier-ignore */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+::selection {
+  color: white;
+  background-color: var(--brand-color);
+}
+
+body {
+  font-size: 1.25rem;
+  font-family: inherit;
+  word-wrap: break-word;
+}

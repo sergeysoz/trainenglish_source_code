@@ -1,0 +1,32 @@
+.phonetic_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-left: 0.75rem;
+}
+
+.phonetic_box p {
+  color: hsl(0, 0%, 62%);
+  margin-right: 0.5rem;
+}
+
+.phonetic_text {
+  font-family: Arial, sans-serif !important;
+}
+
+@media (min-width: 43rem) {
+  .phonetic_text {
+    font-size: 1.5rem;
+  }
+
+  .phonetic_box p {
+    margin-right: 1rem;
+  }
+
+  .phonetic_box {
+    margin-bottom: 1.5rem;
+  }
+}

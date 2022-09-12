@@ -1,0 +1,38 @@
+.about_box {
+  font-size: 1rem;
+  color: hsl(0, 0%, 23);
+  line-height: 1.3;
+  padding: 1rem 0.5rem;
+  background-color: var(--card-background-color);
+  border-radius: 4px;
+  border: 1px solid var(--card-border-color);
+  text-align: center;
+}
+
+.about_box h1 {
+  font-family: "Urbanist", sans-serif;
+  color: var(--brand-color);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about_box p {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 43rem) {
+  .about_box {
+    padding: 2rem;
+  }
+  .about_box h1 {
+    font-family: "Urbanist", sans-serif;
+    color: var(--brand-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .about_box p {
+    font-size: 1.1rem;
+  }
+}

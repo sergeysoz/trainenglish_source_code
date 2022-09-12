@@ -1,0 +1,260 @@
+.drill_title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.drill_score_box {
+  margin-bottom: 2rem;
+  border: 1px solid var(--card-border-color);
+  padding: 1rem 0.5rem;
+  border-radius: 4px;
+  background-color: var(--card-background-color);
+}
+
+.drill_score_box h1 {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--grey-text-color);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.drill_score_box p {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.drill_score_box span {
+  font-weight: 700;
+  text-align: left;
+  color: var(--grey-text-color);
+}
+
+.drill_score_grid {
+  display: grid;
+  grid-template-columns: auto 5rem;
+  grid-auto-flow: dense;
+  grid-gap: 0.5rem;
+}
+
+.drill_description {
+  font-size: 0.75rem;
+  color: #000000;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+  padding: 1rem 0.5rem;
+  background-color: var(--light-grey-color);
+  border-radius: 4px;
+}
+
+.drill_time_range_row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  min-height: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.drill_definition {
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
+
+.drill_part_of_speech {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-grey-color);
+}
+
+.drill_steps {
+  font-size: 1rem;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  flex: 1;
+  color: var(--dark-grey-color);
+}
+
+.indicator_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.drill_input_box {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+form {
+  width: 100%;
+}
+
+.drill_input {
+  font-size: 1.25rem;
+  padding: 0.75rem 0.6rem;
+  margin: 0 auto 0.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  outline: 3px solid var(--light-green-color);
+}
+
+.answer {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 2rem 1rem;
+  background-color: var(--card-background-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: 6px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer span {
+  margin-right: 0.5rem;
+  display: block;
+}
+
+.answer p {
+  color: var(--brand-color);
+}
+
+.drill_footer {
+  width: 100%;
+  max-height: 2rem;
+  flex: 2rem;
+}
+
+.description_link {
+  text-transform: none;
+  display: inline;
+}
+
+.question_box {
+  margin: 1rem 0;
+}
+
+.popup {
+  z-index: 20;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.popup > div {
+  width: 100%;
+  flex: auto;
+  margin: 0 auto;
+}
+
+@media (min-width: 43rem) {
+  .drill_title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .drill_description {
+    font-size: 1.25rem;
+  }
+
+  .drill_definition {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .drill_time_range_row {
+    grid-gap: 1.25rem;
+  }
+
+  .drill_footer {
+    width: 100%;
+    min-height: 4rem;
+  }
+
+  .drill_steps {
+    font-size: 1.25rem;
+  }
+
+  .drill_input {
+    font-size: 2rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .drill_part_of_speech {
+    font-size: 1.25rem;
+  }
+
+  .answer span {
+    width: 2rem;
+  }
+
+  .answer svg {
+    font-size: 3.5rem;
+    transform: matrix(2.2, 0, 0, 2.2, 0, 0);
+  }
+
+  .answer p {
+    font-size: 3.5rem;
+  }
+
+  .drill_score_box {
+    padding: 2rem 3rem;
+    margin: 0 auto 4rem;
+    max-width: 70%;
+  }
+
+  .drill_score_box h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .drill_score_box p {
+    font-size: 1.5rem;
+  }
+
+  .drill_score_box span {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .popup {
+    padding: 3rem 8rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  .popup {
+    padding: 3rem 20rem;
+  }
+
+  .answer span {
+    width: 3rem;
+    margin-right: 0.5rem;
+  }
+}

@@ -1,0 +1,17 @@
+.circle_timer_box {
+  min-width: 4rem;
+  max-width: 4rem;
+  min-height: 4rem;
+  max-height: 4rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex: 6.5rem;
+}
+
+.circle_timer_indicator {
+  z-index: 10;
+}

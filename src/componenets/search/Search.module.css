@@ -1,0 +1,153 @@
+.search_spot {
+  background-color: var(--secondary-color);
+  height: auto;
+  padding: 0.55rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.search_box {
+  width: calc(100vw - 2rem);
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.search {
+  margin: 0rem auto 0.75rem auto;
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+form {
+  width: 100%;
+}
+
+.search input {
+  display: block;
+  width: 100%;
+  padding-left: 0.75rem;
+  border: none;
+  z-index: 10;
+  border-radius: 4px 0 0 4px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  min-height: 2.75rem;
+  flex: auto;
+}
+
+.search input:focus,
+.search input:active {
+  border: none;
+  outline: none;
+  border-radius: 0;
+}
+
+.logo {
+  display: inline;
+  align-items: center;
+  vertical-align: middle;
+  min-height: 0.5rem;
+  max-width: 0.2rem;
+  margin: auto 0;
+  margin-right: 0.5rem;
+  padding: 0.2rem 0;
+}
+
+.logo img {
+  display: inline;
+  max-width: 1.5rem;
+}
+
+.wordmark {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: auto;
+  margin-bottom: 0.6rem;
+}
+
+.wordmark img {
+  display: block;
+  width: 1.15rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.wordmark p {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 43rem) {
+  .search_spot {
+    padding: 1rem 0 1rem;
+  }
+  .search {
+    padding: 0.5rem;
+  }
+
+  .search_box {
+    padding: 0;
+    width: calc(100vw - 8rem);
+  }
+
+  .search input {
+    padding-left: 1.5rem;
+    min-height: 4rem;
+    font-size: 2rem;
+  }
+
+  .logo {
+    max-width: 180px;
+    margin: 0 auto;
+    display: block;
+    padding: 0.9rem 0 1rem;
+  }
+
+  .wordmark {
+    margin-bottom: 1.1rem;
+  }
+
+  .wordmark img {
+    width: 1.4rem;
+  }
+
+  .wordmark p {
+    font-size: 1.5rem;
+    padding: 0.25rem 0;
+  }
+}
+
+@media (min-width: 62rem) {
+  .search_box {
+    width: 57vw;
+  }
+}
+
+@media (min-width: 82rem) {
+  .search_box {
+    width: 43vw;
+  }
+}

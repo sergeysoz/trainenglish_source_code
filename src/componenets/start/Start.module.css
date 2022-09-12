@@ -1,0 +1,11 @@
+.hero {
+  text-transform: uppercase;
+  text-align: justify;
+  min-width: 100%;
+  grid-column: span 6;
+  line-height: 1.5;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 2rem;
+}

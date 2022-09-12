@@ -1,0 +1,6 @@
+.history_row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin: 0.5rem auto 1rem auto;
+}

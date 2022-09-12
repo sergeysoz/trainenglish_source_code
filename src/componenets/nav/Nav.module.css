@@ -1,0 +1,57 @@
+.nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav_link {
+  font-size: 1rem;
+  text-decoration: none;
+  margin-right: 1.25rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.nav_active {
+  color: var(--light-green-color);
+}
+
+.count_spot {
+  background: var(--count-indicator-color);
+  color: #ffffff;
+  padding: 0.1rem;
+  font-size: 0.65rem;
+  min-width: 1rem;
+  min-height: 1rem;
+  max-width: auto;
+  max-height: 1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: -0.75rem;
+  top: -0.25rem;
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 43rem) {
+  .nav {
+    margin: 0.5rem auto;
+  }
+
+  .nav_link {
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .count_spot {
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    max-width: auto;
+    max-height: 1.25rem;
+    border-radius: 0.625rem;
+    font-size: 0.9rem;
+  }
+}

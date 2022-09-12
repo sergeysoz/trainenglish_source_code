@@ -1,0 +1,27 @@
+.details_box {
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 45%);
+}
+
+.details_box h4 {
+  font-weight: 900;
+}
+
+.source_link {
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+@media (min-width: 43rem) {
+  .details_box {
+    border-radius: 6px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+}

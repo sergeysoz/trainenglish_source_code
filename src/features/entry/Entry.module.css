@@ -1,0 +1,55 @@
+.save_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.entry_word {
+  display: block;
+  width: auto;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--brand-color);
+  font-size: 2.75rem;
+  margin: 0 1rem 1.5rem 0;
+}
+
+.rejected_word {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.rejected_message {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.phonetic_box {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 43rem) {
+  .save_box {
+    margin-bottom: 2rem;
+  }
+  .save_box button {
+    margin-right: 1rem;
+  }
+
+  .entry_word {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .rejected_word {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .rejected_message {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+  }
+}

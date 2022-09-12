@@ -1,0 +1,16 @@
+.part_box {
+  margin-bottom: 2rem;
+}
+
+.part_of_speech {
+  color: var(--grey-text-color);
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 43rem) {
+  .part_of_speech {
+    font-size: 1.5rem;
+  }
+}

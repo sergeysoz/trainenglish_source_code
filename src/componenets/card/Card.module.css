@@ -1,0 +1,47 @@
+.card {
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  border: 1px solid var(--card-border-color);
+  grid-column: span 6;
+  grid-row: span 1;
+  background-color: var(--card-background-color);
+}
+
+.card h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: var(--brand-color);
+  font-weight: 900;
+  margin-bottom: 1.25rem;
+}
+
+.card p {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: hsl(0, 0%, 23%);
+}
+
+@media (min-width: 43rem) {
+  .card {
+    padding: 1rem 2rem;
+    grid-column: span 12;
+    margin-bottom: 0;
+  }
+
+  .card h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .card p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  .card {
+    padding: 2rem;
+    grid-column: span 6;
+  }
+}
